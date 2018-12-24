@@ -105,7 +105,7 @@ module.exports = {
           compounds.forEach(function (e) {
             e.filterChildren(options.filters)
             var contents = templates.render(e);
-            helpers.writeFile(util.format(options.output, e.name), [contents]);
+            helpers.writeFile(util.format(options.output, e.id), [contents]);
           });
         });
       }
